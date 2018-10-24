@@ -13,6 +13,7 @@ const int QUIT = -1;
 
 int main()
 {
+
   //3x3 matrix of characters, initially with blank spaces in each position
   char board[ROWS][COLUMNS] = {{BLANK, BLANK, BLANK},
                                {BLANK, BLANK, BLANK},
@@ -41,6 +42,18 @@ int main()
       cout<<"Values must be between 0 and 2.\n";
     }
     //TODO: Place the piece and swap turns
+    else
+    {
+            board[row][column] = turn;
+            if(turn == X)
+            {
+                    turn = O;
+            }
+            else
+            {
+                    turn = X;
+            }
+    }
     //Outline
     //1. When neither of the (above) if nor else if statements are true, then...
     //1-A.  Assign the board location of row and column to the value of turn
@@ -48,8 +61,22 @@ int main()
     //1-B-1.  turn should be assigned the value 'O'
     //1-C.  In any other case, then...
     //1-C-1.  turn should be assigned the value 'X'
-    
+    if(playing==true)
+    {
+
     cout<<"\nBOARD\n-----\n";
+    for(int rows = 0; rows < ROWS; rows++)
+    {
+            for(int col = 0; col < COLUMNS; col++)
+            {
+                    cout<<board[rows][col]<<" ";
+            }
+            if(rows!=2)
+            {
+            cout<<"\n";
+            }
+    }
+    }
     //TODO: Print the current board
     //Outline
     //1. Traverse through each row, calling the current row r
@@ -58,7 +85,7 @@ int main()
     //1-A-2. Display a space
     //1-B. Display an newline to move to the next row of the board
     
-  }while( playing );
+  }while( playing == true );
 
   cout<<"Goodbye!\n";
 
