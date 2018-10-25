@@ -65,30 +65,30 @@ int main()
 
 
                 cout<<"\nBOARD\n-----\n";
-                
+
                 {
-        for(int rows = 0; rows < ROWS; rows++)
-        {
-                for(int col = 0; col < COLUMNS; col++)
-                {
-                        cout<<board[rows][col]<<" ";
+                        for(int rows = 0; rows < ROWS; rows++)
+                        {
+                                for(int col = 0; col < COLUMNS; col++)
+                                {
+                                        cout<<board[rows][col]<<" ";
+                                }
+                                cout<<endl;
+
+                        }
                 }
-                if(rows!=2)
-                        cout<<"\n";
-        }
-                }
-        
-//TODO: Print the current board
-//Outline
-//1. Traverse through each row, calling the current row r
-//1-A. Traverse through each column in row r, calling the current column c
-//1-A-1.  Display the value of the board at location of r and c
-//1-A-2. Display a space
-//1-B. Display an newline to move to the next row of the board
 
-}while( playing == true );
+                //TODO: Print the current board
+                //Outline
+                //1. Traverse through each row, calling the current row r
+                //1-A. Traverse through each column in row r, calling the current column c
+                //1-A-1.  Display the value of the board at location of r and c
+                //1-A-2. Display a space
+                //1-B. Display an newline to move to the next row of the board
 
-cout<<"Goodbye!\n";
+        }while( playing == true );
 
-return 0;
+        cout<<"Goodbye!\n";
+
+        return 0;
 }
