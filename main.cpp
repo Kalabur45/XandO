@@ -26,7 +26,7 @@ int main()
 
         do
         {
-                cout<<turn<<"\n's turn.";
+                cout<<"\n" << turn << "'s turn.";
                 cout<<"Which column and row (0-2, or -1 for both to quit)?\n";
                 cin>>column;
                 cin>>row;
