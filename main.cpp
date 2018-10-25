@@ -73,7 +73,7 @@ int main()
                 {
                         cout<<board[rows][col]<<" ";
                 }
-                if(rows!=3)
+                if(rows!=2)
                         cout<<"\n";
         }
                 }
