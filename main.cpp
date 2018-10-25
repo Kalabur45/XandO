@@ -66,7 +66,7 @@ int main()
 
                 cout<<"\nBOARD\n-----\n";
 
-                {
+                
                         for(int rows = 0; rows < ROWS; rows++)
                         {
                                 for(int col = 0; col < COLUMNS; col++)
@@ -76,7 +76,7 @@ int main()
                                 cout<<endl;
 
                         }
-                }
+                
 
                 //TODO: Print the current board
                 //Outline
