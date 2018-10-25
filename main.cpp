@@ -26,7 +26,7 @@ int main()
 
         do
         {
-                cout<<"\n" << turn << "'s turn.";
+                cout<<"\n" << turn << "'s turn.\n";
                 cout<<"Which column and row (0-2, or -1 for both to quit)?\n";
                 cin>>column;
                 cin>>row;
@@ -65,7 +65,7 @@ int main()
 
 
                 cout<<"\nBOARD\n-----\n";
-                if(playing==true)
+                
                 {
         for(int rows = 0; rows < ROWS; rows++)
         {
@@ -79,6 +79,7 @@ int main()
                 }
         }
                 }
+        
 //TODO: Print the current board
 //Outline
 //1. Traverse through each row, calling the current row r
